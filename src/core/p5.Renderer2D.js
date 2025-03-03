@@ -14,7 +14,9 @@ const styleEmpty = 'rgba(0,0,0,0)';
 class Renderer2D extends p5.Renderer {
   constructor(elt, pInst, isMainCanvas) {
     super(elt, pInst, isMainCanvas);
-    this.drawingContext = this.canvas.getContext('2d');
+    this.drawingContext = this.canvas.getContext('2d', {
+      willReadFrequently: true
+    });
     this._pInst._setProperty('drawingContext', this.drawingContext);
   }
 
