@@ -8,7 +8,8 @@
     "docs:dev": "grunt yui:dev",
     "test": "grunt",
     "lint": "grunt lint",
-    "lint:fix": "grunt lint-fix"
+    "lint:fix": "grunt lint-fix",
+    "prepack": "grunt build"
   },
   "lint-staged": {
     "ignore": [
